@@ -2,4 +2,4 @@
 ## Computación avanzada en Java
 
 * Ricardo Romero Flores
-*2728814
+* 2728814
