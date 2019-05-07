@@ -3,13 +3,13 @@ package me.rrf.caj;
 import java.util.Collections;
 import java.util.Map;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
+@RequestMapping("hello")
 public class HelloWorldController {
-	
-	@RequestMapping("hello")
+	@RequestMapping(produces = "application/json")
 	public Map<String, String> hello() {
 		return Collections.singletonMap("data", "Hello World!");
 	}
