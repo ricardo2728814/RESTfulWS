@@ -1,4 +1,4 @@
-package me.rrf.web;
+package me.rrf.utm.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

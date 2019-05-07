@@ -1,4 +1,4 @@
-package me.rrf.web;
+package me.rrf.utm.web;
 
 import java.util.Collections;
 import java.util.Map;
