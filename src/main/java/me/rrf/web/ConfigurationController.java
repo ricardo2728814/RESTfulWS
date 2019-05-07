@@ -1,4 +1,4 @@
-package me.rrf.caj;
+package me.rrf.web;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

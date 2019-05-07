@@ -1,4 +1,4 @@
-package me.rrf.caj;
+package me.rrf.web;
 
 import java.util.Collections;
 import java.util.Map;
