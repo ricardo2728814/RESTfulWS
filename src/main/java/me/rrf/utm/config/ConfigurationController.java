@@ -1,5 +1,7 @@
 package me.rrf.utm.config;
 
+import javax.servlet.ServletRegistration.Dynamic;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class ConfigurationController extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -25,4 +27,8 @@ public class ConfigurationController extends AbstractAnnotationConfigDispatcherS
 		};
 	}
 
+	@Override
+    protected void customizeRegistration(Dynamic registration) {
+        registration.setInitParameter("dispatchOptionsRequest", "true");
+    }
 }

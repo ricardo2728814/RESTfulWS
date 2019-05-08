@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("me.rrf.utm.web")
+@ComponentScan("me.rrf.utm")
 public class MVCAdapter extends WebMvcConfigurerAdapter{
 
 }
