@@ -25,6 +25,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import me.jmll.utm.model.OptionsDoc;
 import me.jmll.utm.rest.exception.ResourceNotFoundException;
 import me.jmll.utm.service.FileService;
 import me.jmll.utm.view.DownloadView;
@@ -42,15 +43,15 @@ public class FileRest {
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("Allow", "OPTIONS,GET,POST,DELETE");
 
-		Map<String, String> methods = new Hashtable<>(4);
-		methods.put("POST", "Uploads specified file in parameter 'path'");
-		methods.put("OPTIONS", "Resource documentation");
-		methods.put("GET", "Downloads specified file in parameter 'path'");
-		methods.put("DELETE", "Deletes specified file in parameter 'path'");
+		Map<HttpMethod, String> methods = new Hashtable<>(4);
+		methods.put(HttpMethod.POST, "Uploads specified file in parameter 'path'");
+		methods.put(HttpMethod.OPTIONS, "Resource documentation");
+		methods.put(HttpMethod.GET, "Downloads specified file in parameter 'path'");
+		methods.put(HttpMethod.DELETE, "Deletes specified file in parameter 'path'");
 
-		Map<String, Map> body = Collections.singletonMap("methods", methods);
-
-		return new ResponseEntity<>(body, headers, HttpStatus.OK);
+		OptionsDoc bdy = new OptionsDoc();
+		bdy.setMethods(methods);
+		return new ResponseEntity<>(bdy, headers, HttpStatus.OK);
 	}
 
 	@RequestMapping(params = { "path" }, method = RequestMethod.GET)
