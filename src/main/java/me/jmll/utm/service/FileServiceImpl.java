@@ -35,7 +35,7 @@ public class FileServiceImpl implements FileService {
 			for(Path p: stream) {
 				if (Files.isDirectory(p)) {
 					walkDir(p, paths);
-				}
+				} else
 				paths.add(p);
 			}
 		} catch (IOException | DirectoryIteratorException ex) {
