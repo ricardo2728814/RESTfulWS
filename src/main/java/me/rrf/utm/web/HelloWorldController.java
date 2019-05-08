@@ -1,4 +1,4 @@
-package me.rrf.web;
+package me.rrf.utm.web;
 
 import java.util.Collections;
 import java.util.Map;
@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 	@RequestMapping(produces = "application/json")
 	public Map<String, String> hello() {
-		return Collections.singletonMap("data", "Hello World!");
+		return Collections.singletonMap("data", "Hello World 2!");
 	}
 }
