@@ -1,5 +1,6 @@
 package me.jmll.utm.repository;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
@@ -23,7 +24,9 @@ import me.jmll.utm.model.User;
 	
 		@Override
 		public List<User> getUsers() {
-			return (List<User>) userDB.values();
+			List<User> userList = new ArrayList<User>();
+			userList.addAll(userDB.values());
+			return userList;
 		}
 	
 		@Override
@@ -50,5 +53,16 @@ import me.jmll.utm.model.User;
 			} else {
 				return false;
 			}
+		}
+
+		@Override
+		public void deleteUser(String username) {
+			userDB.remove(username);
+		}
+
+		@Override
+		public User updateUser(User user) {
+			userDB.put(user.getUsername(), user);
+			return user;
 		}
 	}
