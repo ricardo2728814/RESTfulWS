@@ -10,7 +10,8 @@ public class ConfigurationController extends AbstractAnnotationConfigDispatcherS
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
 		return new Class[] {
-				MVCAdapter.class 
+				MVCAdapter.class,
+				JmllAdapter.class
 		};
 	}
 
