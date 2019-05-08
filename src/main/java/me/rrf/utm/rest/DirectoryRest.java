@@ -38,7 +38,7 @@ public class DirectoryRest {
 	@ResponseBody
 	public ResponseEntity<?> showOptions() {
 		HttpHeaders headers = new HttpHeaders();
-		headers.add("Allow", "OPTIONS,GET,POST,DELETE");
+		headers.add("Allow", "OPTIONS,GET");
 		Map<HttpMethod, String> methods = new Hashtable<>(4);
 		methods.put(HttpMethod.OPTIONS, "Resource documentation");
 		methods.put(HttpMethod.GET, "Lists the specified directory contents in parameter 'dir'");
