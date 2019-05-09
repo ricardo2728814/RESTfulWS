@@ -1,0 +1,553 @@
+{
+	"info": {
+		"_postman_id": "96bc3cb1-12e9-4c70-8381-b2fd5d3d08a7",
+		"name": "CAJEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HelloWorld",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FileRest DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/file?filePath=/Users/rickstapht/text.txt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"file"
+					],
+					"query": [
+						{
+							"key": "filePath",
+							"value": "/Users/rickstapht/text.txt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FileRest POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FileRest GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/file?path=/Users/rickstapht/db.json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"file"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "/Users/rickstapht/db.json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FileRest Options",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directory OPTIONS",
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/directory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"directory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directory GET JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/directory?dir=/Users/rickstapht/workplace/node-share-file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"directory"
+					],
+					"query": [
+						{
+							"key": "dir",
+							"value": "/Users/rickstapht/workplace/node-share-file"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directory GET XML",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/directory?dir=/Users/rickstapht/workplace/node-share-file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"directory"
+					],
+					"query": [
+						{
+							"key": "dir",
+							"value": "/Users/rickstapht/workplace/node-share-file"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notify Options",
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/notify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"notify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notifications GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/notify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"notify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notify POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/notify?subject=ASUNTO 2&message=Hola mundo 2&toAddress=kronyreception@gmail.com&ccAddress=ricardo.romero.f98@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"notify"
+					],
+					"query": [
+						{
+							"key": "subject",
+							"value": "ASUNTO 2"
+						},
+						{
+							"key": "message",
+							"value": "Hola mundo 2"
+						},
+						{
+							"key": "toAddress",
+							"value": "kronyreception@gmail.com"
+						},
+						{
+							"key": "ccAddress",
+							"value": "ricardo.romero.f98@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users GET XML",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"ricardo98\",\n\t\"password\": \"secret_password\",\n\t\"fullName\": \"Ricardo Romero\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/user/ricardo98",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"user",
+						"ricardo98"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"ricardo99\",\n\t\"password\": \"newPassword\",\n\t\"fullName\": \"Ricardo Romero\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/user/ricardo98",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						"user",
+						"ricardo98"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Index GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "index GET XML",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/RESTfulWS/api/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RESTfulWS",
+						"api",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
